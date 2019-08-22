@@ -16,9 +16,11 @@ In info.json, add a dependency on this mod:
 In control.lua, register your entities in on_init(), and optionally in on_configuration_changed() too:
 ```
 script.on_init(function()
-  remote.call("instant-deconstruction-bugfix", "add", "my-entity-name")
-  -- Also supports a table of names
-  remote.call("instant-deconstruction-bugfix", "add", {"entity-name-1", "entity-name-2"})
+  if remote.interfaces["instant-deconstruction-bugfix"] then
+    remote.call("instant-deconstruction-bugfix", "add", "my-entity-name")
+    -- Also supports a table of names
+    remote.call("instant-deconstruction-bugfix", "add", {"entity-name-1", "entity-name-2"})
+  end
 end)
 ```
 
