@@ -1,10 +1,10 @@
 {
   "name":"instant-deconstruction-bugfix",
   "author":"DaveMcW",
-  "version":"0.0.1",
+  "version":"0.0.2",
   "title":"Instant Deconstruction Bugfix",
   "homepage":"",
-  "description":"Adds a script_raise_destroy event for entities destroyed by /editor instant deconstruction.",
+  "description":"Adds a script_raised_destroy event for entities destroyed by /editor instant deconstruction.",
   "dependencies": ["base"],
   "factorio_version": "0.17"
 }

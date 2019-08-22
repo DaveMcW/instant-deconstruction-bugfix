@@ -2,11 +2,11 @@
 ---
 The Factorio map editor (/editor) does not support instant deconstruction of complex entities ([72215](https://forums.factorio.com/72215)). Using a deconstruction planner in the map editor will leave pieces of entities behind.
 
-This mod cleans up the broken entities by calling script_raise_destroy after the map editor closes.
+This mod cleans up the broken entities by calling script_raised_destroy after the map editor closes.
 
 ### For Modders
 ---
-You must register your entities with the mod to get the script_raise_destroy events.
+You must register your entities with the mod to get the script_raised_destroy events.
 
 In info.json, add a dependency on this mod:
 ```
@@ -24,4 +24,4 @@ script.on_init(function()
 end)
 ```
 
-And of course, it is your job to listen for the script_raise_destroy event and do the appropriate cleanup.
+And of course, it is your job to listen for the script_raised_destroy event and do the appropriate cleanup.
