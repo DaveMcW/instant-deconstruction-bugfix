@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2019-08-21
+  Features:
+    - Adds a script_raise_destroy event for entities destroyed by /editor instant deconstruction.
